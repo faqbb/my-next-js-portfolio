@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function Sidebar({children}) {
+export default function Sidebar({active}) {
     return (
         <>
         <aside className='flex-col fixed sidebar'>
@@ -18,9 +18,9 @@ export default function Sidebar({children}) {
               <br></br>
               <span className='font-montserrat font-extralight italic'><span className='text-red-600'>const</span><span> showIndex</span><span className='text-red-600'> =</span> <span className='text-amber-300'>&#40;&#41;</span><span className='text-red-600'> =&#62;</span> <span className='text-amber-300'>&#40;</span></span>
                 <ul className='font-montserrat font-extralight italic'>
-                  <li className='hover:text-3xl'><Link href={'/aboutme'}><span href={"/aboutme"} className='text-red-600'>&ensp; return</span> <span>index.<span className='text-amber-600'>_AcercaDeMi</span></span></Link></li>
-                  <li className='hover:text-3xl'><Link href={'/myprojects'}><span className='text-red-600'>&ensp; return</span> <span>index.<span className='text-amber-600'>_MisProyectos</span></span></Link></li>
-                  <li className='hover:text-3xl'><Link href={'/contact'}><span className='text-red-600'>&ensp; return</span> <span>index.<span className='text-amber-600'>_Contactame</span></span></Link></li>
+                  <li className='hover:text-3xl'><Link href='/aboutme'><span className={active == "aboutme" ? "text-red-600" : "invisible"}>&ensp; return</span> <span>index.<span className='text-amber-600'>_AcercaDeMi</span></span></Link></li>
+                  <li className='hover:text-3xl'><Link href='/myprojects'><span className={active == "myprojects" ? "text-red-600" : "invisible"}>&ensp; return</span> <span>index.<span className='text-amber-600'>_MisProyectos</span></span></Link></li>
+                  <li className='hover:text-3xl'><Link href='/contact'><span className={active == "contact" ? "text-red-600" : "invisible"}>&ensp; return</span> <span>index.<span className='text-amber-600'>_Contactame</span></span></Link></li>
                   <li className='text-amber-300'>&#41;</li>
                 </ul>
             </div>

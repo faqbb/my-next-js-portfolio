@@ -32,10 +32,8 @@ export const metadata = {
   description: '¡Bienvenido a mi portafolio!',
 }
 
-export default function RootLayout({ children }) {
+export default function Layout({ children }) {
   return (
-    <html lang="en">
-      <body className={montserrat.className}>{children}</body>
-    </html>
+      <div className={montserrat.className}>{children}</div>
   )
 }

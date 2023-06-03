@@ -23,7 +23,7 @@ body {
 
 @layer components {
   .sidebar {
-    width: 20%;
+    width: 27%;
     height: 100%;
     display: flex;
     background-color: #312E2E;
@@ -50,14 +50,19 @@ body {
     background-color: #373737;
     max-height: 100vh;
     height: 2000px;
+    padding-left: 27%;
+    padding-block: 15%;
+    justify-content: space-evenly;
   }
   .welcome { 
-    width: 732px;
+    width: 1000px;
     height: 97px;
-    padding-left: 400px;
-    font-size: 96px;
+    font-size: 75px;
     line-height: 116px;
 
     color: #FFFFFF;
+  }
+  .buttonList {
+    font-size: 32px;
   }
 }

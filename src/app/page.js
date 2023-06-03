@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import FrontPage from './components/partials/frontPage.js'
+import FrontPage from './components/frontPage.js'
 
 export default function Home() {
   return (<>
