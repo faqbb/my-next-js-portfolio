@@ -65,4 +65,14 @@ body {
   .buttonList {
     font-size: 32px;
   }
+  .contactPage {
+    background-color: #373737;
+    max-height: 100vh;
+    height: 2000px;
+    padding-left: 27%;
+    padding-top: 10%;
+  }
+  .emailForm {
+    padding-inline: 30%;
+  }
 }

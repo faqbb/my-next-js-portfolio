@@ -6,6 +6,7 @@ export default function AboutMe() {
     return (
         <Layout>       
             <Sidebar active="aboutme"></Sidebar>
+            
         </Layout>
     )
 }

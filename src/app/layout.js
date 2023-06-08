@@ -33,7 +33,8 @@ export const metadata = {
 }
 
 export default function Layout({ children }) {
-  return (
+  return (<>
       <div className={montserrat.className}>{children}</div>
+  </>
   )
 }

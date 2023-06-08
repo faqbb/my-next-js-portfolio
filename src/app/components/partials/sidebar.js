@@ -6,7 +6,9 @@ export default function Sidebar({active}) {
         <>
         <aside className='flex-col fixed sidebar'>
           <div className='self-center text-center items-center flex flex-col mb-8'>
-            <Image src="/../public/images/profilePic.jpg" width={211} height={1} className='profilePic flex'></Image>
+            <Link href='/'>
+              <Image src="/../public/images/profilePic.jpg" width={211} height={1} className='profilePic flex'></Image>
+            </Link>
             <h1 className='font-montserrat font-extrabold name flex'>Facundo Barberia</h1>
             <h2 className='font-montserrat font-normal'>Desarrollador Full-Stack</h2>
           </div>
