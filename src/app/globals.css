@@ -22,6 +22,8 @@ body {
 }
 
 @layer components {
+
+  /* Core layout */
   .sidebar {
     width: 27%;
     height: 100%;
@@ -29,6 +31,13 @@ body {
     background-color: #312E2E;
     padding: auto;
   }
+
+  .mainArticle {
+    background-color: #373737;
+    max-height: 100vh;
+    height: 2000px;
+    padding-left: 27%;
+  } 
   .profilePic {
     border-radius: 50%;
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.4));
@@ -46,11 +55,9 @@ body {
     font-size: 27px;
     line-height: 24px;
   }
+
+ /* Front Page */
   .frontPage {
-    background-color: #373737;
-    max-height: 100vh;
-    height: 2000px;
-    padding-left: 27%;
     padding-block: 15%;
     justify-content: space-evenly;
   }
@@ -65,14 +72,44 @@ body {
   .buttonList {
     font-size: 32px;
   }
+  /* Contact Page */
   .contactPage {
-    background-color: #373737;
-    max-height: 100vh;
-    height: 2000px;
-    padding-left: 27%;
     padding-top: 10%;
   }
   .emailForm {
     padding-inline: 30%;
+  }
+
+  /* About me Page */
+  .aboutMeContainer {
+    width: 100%;
+    padding-top: 15%;
+    padding-inline: 5%;
+  }
+  /* My projects Page */
+  .projectItem {
+    width: 350px;
+    height: 250px;
+    background-color:#312E2E;
+    border-radius: 25%;
+  }
+  .projectItem:hover .picOverlay{
+    height: 100%;
+  }
+  .projectPic {
+    width: inherit;
+    height: inherit;
+    opacity: 40%;
+    border-radius: 25%;
+  }
+  .picOverlay {
+    position: absolute;
+    background-color: #312E2E;
+    overflow: hidden;
+    height: 0;
+    width: inherit;
+    transition: .5s ease-in-out;
+    border-radius: 25%;
+    max-height: 250px;
   }
 }

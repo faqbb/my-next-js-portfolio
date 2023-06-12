@@ -47,7 +47,7 @@ export default function AboutMe() {
     return ( 
         <Layout>       
             <Sidebar active="contact"></Sidebar>
-            <article className="contactPage">
+            <article className="contactPage mainArticle">
                 <div className="text-center pb-7">
                     <h2 className="text-5xl py-4 font-montserrat font-extrabold">Mis Redes</h2>
                     <ul className="flex flex-row justify-evenly py-5">
@@ -56,7 +56,7 @@ export default function AboutMe() {
                     </ul>
                 </div>
                 <div className="text-center pt-8">
-                    <h2 className="text-5xl py-4 font-montserrat font-extrabold">Mandame un mail!</h2>
+                    <h2 className="text-5xl py-4 font-montserrat font-extrabold">¡Mandame un mail!</h2>
                     <form id='emailData' className="flex flex-col emailForm">
                         <label >Tu nombre</label>
                         <input 
@@ -87,6 +87,7 @@ export default function AboutMe() {
                         className="rounded-full bg-black my-5 mx-48 text-white"
                         loading={isLoading} 
                         onClick={onSubmitFunc}
+                        disabled={!(values.subject && values.message && values.name)}
                         >Enviar</Button>    
                     </form>
                 </div>
