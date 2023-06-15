@@ -61,10 +61,11 @@ body {
     padding-block: 15%;
     justify-content: space-evenly;
   }
-  .welcome { 
+  .title { 
     width: 1000px;
     height: 97px;
-    font-size: 75px;
+    text-align: center;
+    font-size: 62px;
     line-height: 116px;
 
     color: #FFFFFF;
@@ -73,9 +74,6 @@ body {
     font-size: 32px;
   }
   /* Contact Page */
-  .contactPage {
-    padding-top: 10%;
-  }
   .emailForm {
     padding-inline: 30%;
   }
@@ -83,10 +81,18 @@ body {
   /* About me Page */
   .aboutMeContainer {
     width: 100%;
-    padding-top: 15%;
+    padding-top: 10%;
     padding-inline: 5%;
   }
   /* My projects Page */
+  .projectContainer {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    padding-block: 5%;
+  }
   .projectItem {
     width: 350px;
     height: 250px;
@@ -111,5 +117,18 @@ body {
     transition: .5s ease-in-out;
     border-radius: 25%;
     max-height: 250px;
+  }
+  /* Commit List */
+  .commitList {
+    background-color: #312E2E;
+    font-size: 20px;
+    width: 100%;
+    bottom: 0;
+  }
+  .commitItem {
+    padding-block: 15px;
+    border-top: #373737;
+    border-top-style:dotted;
+    border-top-width: 5px;
   }
 }

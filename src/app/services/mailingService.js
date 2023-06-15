@@ -7,7 +7,7 @@ export default class MailingService {
             port: 587,
             auth: {
                 user: 'fbcontactoport@gmail.com',
-                pass: 'iujiqrdaoawgafyb'
+                pass: process.env.GMAIL_PASS
             },
             tls: {
                 rejectUnauthorized: false

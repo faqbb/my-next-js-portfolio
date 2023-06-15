@@ -47,18 +47,18 @@ export default function AboutMe() {
     return ( 
         <Layout>       
             <Sidebar active="contact"></Sidebar>
-            <article className="contactPage mainArticle">
+            <article className="mainArticle flex flex-col justify-center">
                 <div className="text-center pb-7">
-                    <h2 className="text-5xl py-4 font-montserrat font-extrabold">Mis Redes</h2>
+                    <h2 className="text-5xl py-4 font-montserrat font-extrabold">&#60;<span className="text-cyan-500">h2</span>&#62;Mis Redes&#60;<span className="text-cyan-500">h2</span>&#62;</h2>
                     <ul className="flex flex-row justify-evenly py-5">
                         <li><Link href='https://github.com/faqbb'><Image src='/images/githubIcon.png' width={100} height={100}></Image></Link></li>
                         <li><Link href='https://linkedin.com/in/facundobarberia'><Image src='/images/linkedinIcon.png' width={100} height={100}></Image></Link></li>
                     </ul>
                 </div>
                 <div className="text-center pt-8">
-                    <h2 className="text-5xl py-4 font-montserrat font-extrabold">¡Mandame un mail!</h2>
+                    <h2 className="text-5xl py-4 font-montserrat font-extrabold">&#60;<span className="text-cyan-500">h2</span>&#62;¡Mandame un mail!&#60;<span className="text-cyan-500">h2</span>&#62;</h2>
                     <form id='emailData' className="flex flex-col emailForm">
-                        <label >Tu nombre</label>
+                        <label>form.<span className='text-amber-600'>_TuNombre</span></label>
                         <input 
                             type='text' 
                             name="name" 
@@ -66,7 +66,7 @@ export default function AboutMe() {
                             onChange={handleChange}
                             className=' text-black'>
                         </input>
-                        <label>Asunto</label>
+                        <label>form.<span className='text-amber-600'>_Asunto</span></label>
                         <input 
                             type='text' 
                             name="subject" 
@@ -74,7 +74,7 @@ export default function AboutMe() {
                             onChange={handleChange}
                             className=' text-black'>
                         </input>
-                        <label>Mensaje</label>
+                        <label>form.<span className='text-amber-600'>_Mensaje</span></label>
                         <textarea
                             type='text' 
                             name="message" 
@@ -85,10 +85,11 @@ export default function AboutMe() {
                         </textarea> 
                         <Button 
                         className="rounded-full bg-black my-5 mx-48 text-white"
+                        type="dashed"
                         loading={isLoading} 
                         onClick={onSubmitFunc}
                         disabled={!(values.subject && values.message && values.name)}
-                        >Enviar</Button>    
+                        >form.<span className='text-amber-600'>_Enviar()</span></Button>    
                     </form>
                 </div>
             </article>
