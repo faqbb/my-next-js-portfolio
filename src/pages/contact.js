@@ -6,6 +6,7 @@ import { Button } from "antd";
 import { useState } from "react";
 import sendContactForm from '../app/utils/apiUtils'
 import { ToastContainer, toast } from "react-toastify";
+import Head from "next/head";
 import 'react-toastify/dist/ReactToastify.css';
 
 
@@ -45,7 +46,11 @@ export default function AboutMe() {
         }
     }
     return ( 
-        <Layout>       
+        <Layout> 
+            <Head>
+                <title>Portafolio - Facundo Barberia</title>
+                <link rel="icon" href="/images/icon.png"></link>
+            </Head>       
             <Sidebar active="contact"></Sidebar>
             <article className="mainArticle flex flex-col justify-center h-full max-h-full sm:h-screen">
                 <div className="text-center pb-7">

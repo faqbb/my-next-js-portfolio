@@ -1,11 +1,16 @@
 import Layout from "@/app/layout";
 import Sidebar from "../app/components/partials/sidebar";
 import Image from "next/image";
+import Head from "next/head";
 
 
 export default function AboutMe() {
     return (
-        <Layout>       
+        <Layout>
+            <Head>
+                <title>Portafolio - Facundo Barberia</title>
+                <link rel="icon" href="/images/icon.png"></link>
+            </Head>        
             <Sidebar active="aboutme"></Sidebar>
             <article className="mainArticle items-center flex flex-col xl:flex-initial pt-5 h-full max-h-full sm:h-screen">
             <h2 className="text-2xl xl:text-6xl text-center">&#60;<span className="text-cyan-500">title</span>&#62;Acerca de mi&#60;<span className="text-cyan-500">title</span>&#62;</h2>
