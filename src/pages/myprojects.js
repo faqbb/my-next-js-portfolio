@@ -2,10 +2,15 @@ import Layout from "@/app/layout";
 import Sidebar from "../app/components/partials/sidebar";
 import { Button } from "antd";
 import CommitList from "@/app/components/partials/commitList";
+import Head from "next/head";
 
 export default function Myprojects() {
     return (
-        <Layout>       
+        <Layout>
+            <Head>
+                <title>Portafolio - Facundo Barberia</title>
+                <link rel="icon" href="/images/icon.png"></link>
+            </Head>       
             <Sidebar active="myprojects"></Sidebar>
             <article className="mainArticle flex flex-col items-center justify-between h-full max-h-full xl:h-screen">
                 <h2 className="text-2xl xl:text-6xl text-center pt-10 font-montserrat font-extrabold">&#60;<span className="text-cyan-500">title</span>&#62;Mis proyectos&#60;<span className="text-cyan-500">title</span>&#62;</h2>

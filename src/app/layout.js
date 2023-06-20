@@ -1,5 +1,6 @@
 import './globals.css'
 import localFont from 'next/font/local'
+import Head from 'next/head'
 
 const montserrat = localFont({
   src: [
@@ -27,13 +28,13 @@ const montserrat = localFont({
   variable: '--font-montserrat'
 })
 
-export const metadata = {
-  title: 'Portafolio - Facundo Barberia',
-  description: '¡Bienvenido a mi portafolio!',
-}
-
 export default function Layout({ children }) {
   return (<>
+            <Head>
+                <title>Portafolio - Facundo Barberia</title>
+                <link rel="icon" href="/images/icon.png"></link>
+                <meta name='description' content='!Bienvenidos a mi portafolio!'></meta>
+            </Head>  
       <div className={montserrat.className}>{children}</div>
   </>
   )
