@@ -47,18 +47,18 @@ export default function AboutMe() {
     return ( 
         <Layout>       
             <Sidebar active="contact"></Sidebar>
-            <article className="mainArticle flex flex-col justify-center">
+            <article className="mainArticle flex flex-col justify-center h-full max-h-full sm:h-screen">
                 <div className="text-center pb-7">
-                    <h2 className="text-5xl py-4 font-montserrat font-extrabold">&#60;<span className="text-cyan-500">h2</span>&#62;Mis Redes&#60;<span className="text-cyan-500">h2</span>&#62;</h2>
+                    <h2 className="text-2xl xl:text-5xl py-4 font-montserrat font-extrabold">&#60;<span className="text-cyan-500">h2</span>&#62;Mis Redes&#60;<span className="text-cyan-500">h2</span>&#62;</h2>
                     <ul className="flex flex-row justify-evenly py-5">
                         <li><Link href='https://github.com/faqbb'><Image src='/images/githubIcon.png' width={100} height={100}></Image></Link></li>
                         <li><Link href='https://linkedin.com/in/facundobarberia'><Image src='/images/linkedinIcon.png' width={100} height={100}></Image></Link></li>
                     </ul>
                 </div>
                 <div className="text-center pt-8">
-                    <h2 className="text-5xl py-4 font-montserrat font-extrabold">&#60;<span className="text-cyan-500">h2</span>&#62;¡Mandame un mail!&#60;<span className="text-cyan-500">h2</span>&#62;</h2>
-                    <form id='emailData' className="flex flex-col emailForm">
-                        <label>form.<span className='text-amber-600'>_TuNombre</span></label>
+                    <h2 className="text-2xl xl:text-5xl py-4 font-montserrat font-extrabold">&#60;<span className="text-cyan-500">h2</span>&#62;¡Mandame un mail!&#60;<span className="text-cyan-500">h2</span>&#62;</h2>
+                    <form id='emailData' className="flex flex-col px-12 xl:px-96">
+                        <label>form.<span className='text-amber-600'>_TuCorreo</span></label>
                         <input 
                             type='text' 
                             name="name" 
@@ -84,7 +84,7 @@ export default function AboutMe() {
                             >
                         </textarea> 
                         <Button 
-                        className="rounded-full bg-black my-5 mx-48 text-white"
+                        className="rounded-full bg-black my-5 xl:mx-48 text-white"
                         type="dashed"
                         loading={isLoading} 
                         onClick={onSubmitFunc}

@@ -35,7 +35,7 @@ body {
   .mainArticle {
     background-color: #373737;
     max-height: 100vh;
-    height: 2000px;
+    height: 100vh;
     padding-left: 27%;
   } 
   .profilePic {
@@ -45,37 +45,10 @@ body {
     width: 100%;
     height: 100%;
   }
-  .name {
-    font-size: 30px;
-    line-height: 39px;
 
-    color: #FFFFFF;
-  }
   .indexList {
     font-size: 27px;
     line-height: 24px;
-  }
-
- /* Front Page */
-  .frontPage {
-    padding-block: 15%;
-    justify-content: space-evenly;
-  }
-  .title { 
-    width: 1000px;
-    height: 97px;
-    text-align: center;
-    font-size: 62px;
-    line-height: 116px;
-
-    color: #FFFFFF;
-  }
-  .buttonList {
-    font-size: 32px;
-  }
-  /* Contact Page */
-  .emailForm {
-    padding-inline: 30%;
   }
 
   /* About me Page */
@@ -121,7 +94,6 @@ body {
   /* Commit List */
   .commitList {
     background-color: #312E2E;
-    font-size: 20px;
     width: 100%;
     bottom: 0;
   }
@@ -130,5 +102,22 @@ body {
     border-top: #373737;
     border-top-style:dotted;
     border-top-width: 5px;
+  }
+}
+@media (max-width: 768px)  {
+  /* Sidebar */
+  .sidebar {
+    position: initial;
+    width: 100%;
+    height: initial;
+  }
+  .profilePic {
+    width: 50%;
+    display: flex;
+    height: auto;
+  }
+  /* Article */ 
+  .mainArticle{
+    padding-left: 0%;
   }
 }

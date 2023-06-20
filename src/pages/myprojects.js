@@ -7,12 +7,18 @@ export default function Myprojects() {
     return (
         <Layout>       
             <Sidebar active="myprojects"></Sidebar>
-            <article className="mainArticle flex flex-col items-center justify-between">
-                <h2 className="title">&#60;<span className="text-cyan-500">title</span>&#62;Mis proyectos&#60;<span className="text-cyan-500">title</span>&#62;</h2>
-                    <div className="projectContainer">
-                        <div className="projectItem text-center flex items-center place-content-center">
+            <article className="mainArticle flex flex-col items-center justify-between h-full max-h-full xl:h-screen">
+                <h2 className="text-2xl xl:text-6xl text-center pt-10 font-montserrat font-extrabold">&#60;<span className="text-cyan-500">title</span>&#62;Mis proyectos&#60;<span className="text-cyan-500">title</span>&#62;</h2>
+                    <div className="projectContainer flex-col xl:flex-row items-center">
+                        <div className="projectItem text-center flex items-center place-content-center my-10 xl:my-0">
                             <img className="flex projectPic absolute" src="/images/projectsBg/portfolio.gif"></img>
                             <p className="absolute text-2xl">Este portafolio</p>
+                            <Button 
+                                    type='dashed' 
+                                    className="mt-24 xl:hidden" 
+                                    icon={<img src="/images/githubIcon.png" className="w-4 h-4"></img>} 
+                                    href="https://github.com/faqbb/my-next-js-portfolio">Ver en Github
+                            </Button>
                             <div className="picOverlay">
                                 <div className="font-montserrat font-extralight italic flex flex-col items-center pt-5">
                                     Hecho con: 
@@ -29,11 +35,17 @@ export default function Myprojects() {
                                 </div>
                             </div>
                         </div>
-                        <div className="projectItem text-center flex items-center place-content-center">
+                        <div className="projectItem text-center flex items-center place-content-center my-10 xl:my-0">
                             <img className="flex projectPic absolute" src="/images/projectsBg/EEE.gif"></img>
                             <p className="absolute text-2xl">Express Ecommerce EJS</p>
+                            <Button 
+                                    type='dashed' 
+                                    className="mt-24 xl:hidden" 
+                                    icon={<img src="/images/githubIcon.png" className="w-4 h-4"></img>} 
+                                    href="https://github.com/faqbb/Express-Ecommerce-Ejs">Ver en Github
+                            </Button>
                             <div className="picOverlay">
-                                <div className="font-montserrat font-extralight italic flex flex-col items-center pt-5">
+                                <div className="font-montserrat font-extralight italic flex flex-col items-center pt-5 ">
                                     Hecho con: 
                                     <ul className="p-2">
                                         <li>ExpressJs</li>
@@ -50,9 +62,15 @@ export default function Myprojects() {
                                 </div>
                             </div>
                         </div>
-                        <div className="projectItem text-center flex items-center place-content-center">
+                        <div className="projectItem text-center flex items-center place-content-center my-10 xl:my-0">
                             <img className="flex projectPic absolute" src="/images/projectsBg/adamas.gif"></img>
                             <p className="absolute text-2xl">Adamas Shop</p>
+                            <Button 
+                                    type='dashed' 
+                                    className="mt-24 xl:hidden" 
+                                    icon={<img src="/images/githubIcon.png" className="w-4 h-4"></img>} 
+                                    href="https://github.com/faqbb/Adamas-Shop-2.0">Ver en Github
+                            </Button>
                             <div className="picOverlay">
                                 <div className="font-montserrat font-extralight italic flex flex-col items-center pt-5">
                                     Hecho con: 
@@ -66,13 +84,13 @@ export default function Myprojects() {
                                     type='dashed' 
                                     className="mt-5 " 
                                     icon={<img src="/images/githubIcon.png" className="w-4 h-4"></img>} 
-                                    href="https://github.com/faqbb/Express-Ecommerce-Ejs">Ver en Github</Button>
+                                    href="https://github.com/faqbb/Adamas-Shop-2.0">Ver en Github</Button>
                                 </div>
                             </div>
                         </div>  
                     </div>
                     <section className="pt-10 flex flex-col w-full">
-                        <h2 className="text-4xl py-4 font-montserrat font-extrabold text-center">&#60;<span className="text-cyan-500">h4</span>&#62;Mis ultimos commits&#60;<span className="text-cyan-500">h4</span>&#62;</h2>
+                        <h2 className="text-2xl xl:text-4xl py-4 font-montserrat font-extrabold text-center">&#60;<span className="text-cyan-500">h4</span>&#62;Mis ultimos commits&#60;<span className="text-cyan-500">h4</span>&#62;</h2>
                         <div>
                             <ul>
                                 <CommitList></CommitList>
