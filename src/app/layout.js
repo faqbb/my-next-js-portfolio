@@ -30,12 +30,7 @@ const montserrat = localFont({
 
 export default function Layout({ children }) {
   return (<>
-            <Head>
-                <title>Portafolio - Facundo Barberia</title>
-                <link rel="icon" href="/images/icon.png"></link>
-                <meta name='description' content='!Bienvenidos a mi portafolio!'></meta>
-            </Head>  
-      <div className={montserrat.className}>{children}</div>
-  </>
+        <div className={montserrat.className}>{children}</div>
+        </>
   )
 }

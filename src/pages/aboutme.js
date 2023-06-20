@@ -1,10 +1,9 @@
 import Layout from "@/app/layout";
 import Sidebar from "../app/components/partials/sidebar";
 import Image from "next/image";
-import dynamic from "next/dynamic";
 
 
-function AboutMe() {
+export default function AboutMe() {
     return (
         <Layout>       
             <Sidebar active="aboutme"></Sidebar>
@@ -28,5 +27,3 @@ function AboutMe() {
         </Layout>
     )
 }
-
-export default dynamic (() => Promise.resolve(AboutMe), {ssr: false})

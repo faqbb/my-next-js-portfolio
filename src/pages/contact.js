@@ -7,13 +7,12 @@ import { useState } from "react";
 import sendContactForm from '../app/utils/apiUtils'
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
-import dynamic from "next/dynamic";
 
 
 const defaultValues = { name: "", email: "", subject: "", message: ""}
 const defautState = { values : defaultValues}
 
-function Contact() {
+export default function AboutMe() {
     const [state, setState] = useState(defautState)
 
     const { values, isLoading } = state
@@ -98,5 +97,3 @@ function Contact() {
         </Layout>
     )
 }
-
-export default dynamic (() => Promise.resolve(Contact), {ssr: false})
