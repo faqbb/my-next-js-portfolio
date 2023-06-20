@@ -1,7 +1,8 @@
 import Sidebar from "./partials/sidebar";
 import Link from "next/link";
 import Head from "next/head";
-export default function FrontPage() {
+import dynamic from "next/dynamic";
+ function FrontPage() {
     return (
         <>  <Head>
                 <title>Portafolio - Facundo Barberia</title>
@@ -19,3 +20,5 @@ export default function FrontPage() {
         </>
     )
 }
+
+export default dynamic (() => Promise.resolve(FrontPage), {ssr: false})

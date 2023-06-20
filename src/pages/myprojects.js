@@ -3,8 +3,8 @@ import Sidebar from "../app/components/partials/sidebar";
 import { Button } from "antd";
 import CommitList from "@/app/components/partials/commitList";
 import Head from "next/head";
-
-export default function Myprojects() {
+import dynamic from "next/dynamic";
+ function Myprojects() {
     return (
         <Layout>
             <Head>
@@ -107,3 +107,5 @@ export default function Myprojects() {
         </Layout>
     )
 }
+
+export default dynamic (() => Promise.resolve(Myprojects), {ssr: false})
