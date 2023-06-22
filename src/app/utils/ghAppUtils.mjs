@@ -20,7 +20,7 @@ export default async function getLatestCommits (setProp) {
     const response = await getResponse()
     const dateResponse = (i) => new Date(response.data[i].created_at)
         const commits = []
-        for (let i = 0; i <= 5; i++) {
+        for (let i = 0; i <= 4; i++) {
             if(response.data[i].type == 'PushEvent') {
                 let commitData = {
                     id: response.data[i].id,
