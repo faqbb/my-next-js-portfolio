@@ -8,7 +8,7 @@ export default function Sidebar({active}) {
         <aside className='flex-col fixed sidebar'>
           <div className='self-center text-center items-center flex flex-col mb-0 xl:mb-8'>
             <Link href='/' className='justify-center flex'>
-              <Image src="/../public/images/profilePic.png" width={211} height={1} className='profilePic flex'></Image>
+              <Image src="/images/profilePic.png" width={211} height={1} className='profilePic flex'></Image>
             </Link>
             <h1 className='font-montserrat font-extrabold text-2xl flex xl:text-4xl'>Facundo Barberia</h1>
             <h2 className='font-montserrat font-normal text-xl xl:text-2xl'>Desarrollador Full-Stack</h2>
