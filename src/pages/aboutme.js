@@ -1,20 +1,17 @@
 import Layout from "@/app/layout";
 import Sidebar from "../app/components/partials/sidebar";
 import Image from "next/image";
-import Head from "next/head";
+import HeadPartial from "@/app/components/partials/head";
 
 
 export default function AboutMe() {
     return (
         <Layout>
-            <Head>
-                <title>Portafolio - Facundo Barberia</title>
-                <link rel="icon" href="/images/icon.png"></link>
-            </Head>        
+            <HeadPartial></HeadPartial>     
             <Sidebar active="aboutme"></Sidebar>
-            <article className="mainArticle items-center flex flex-col xl:flex-initial pt-5 h-full max-h-full sm:h-screen">
-            <h2 className="text-2xl xl:text-6xl text-center">&#60;<span className="text-cyan-500">title</span>&#62;Acerca de mi&#60;<span className="text-cyan-500">title</span>&#62;</h2>
-                <div className="flex w-full pt-24 px-2 flex-col xl:flex-row">
+            <article className="mainArticle items-center flex flex-col xl:flex-initial pt-5 h-full max-h-full sm:h-screen text-white">
+            <h2 className="text-2xl xl:text-6xl text-center font-montserrat font-extrabold">&#60;<span className="text-cyan-400">title</span>&#62;Acerca de mi&#60;<span className="text-cyan-400">title</span>&#62;</h2>
+                <div className="flex w-full pt-24 px-2 flex-col xl:flex-row font-montserrat" >
                 <div className="text-3xl xl:text-4xl px-5 text-center flex flex-col items-center">
                         <div>¡Hola! <br></br>Mi nombre es Facundo Barberia y soy un desarrollador full-stack viviendo en Tandil, Buenos Aires.</div>
                         <Image src='/images/hi.png' width={100} height={100} className="pt-5"></Image>
