@@ -18,7 +18,7 @@ export default function AboutMe() {
                     </div>
                     <div className=" text-xl text-center flex flex-col-reverse items-center px-7 xl:flex-col pt-11 xl:pt-0">
                         <Image src='/images/code.png' width={100} height={100} className="pb-5 pt-10"></Image>
-                        <div className="font-montserrat font-extralight italic">Soy graduado de la carrera Full-Stack de Coderhouse que me introdujo al mundo del desarrollo, ahora mismo me encuentro ampliando mis conocimientos con nuevas tecnologias.<br></br> Adoro el codigo, me motivan los proyectos creativos y ambiciosos que supongan un desafío.<br></br> ¡Trabajemos juntos!</div>
+                        <div className="font-montserrat font-extralight italic">Soy un fanático de la tecnología enfocado en el desarrollo. Naturalmente curioso y detallista para con mi trabajo.<br></br> Adoro el codigo, me motivan los proyectos creativos y ambiciosos que supongan un desafío.<br></br> ¡Trabajemos juntos!</div>
                     </div>
                     <div className="text-xl text-center flex flex-col-reverse items-center pt-3 xl:flex-col xl:pt-0">
                         <Image src='/images/goal.png' width={100} height={100} className="pb-5 pt-10"></Image>
